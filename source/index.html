@@ -6,13 +6,12 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo-ico">
-      <img class="page-header__logo-image" src="http://placehold.it/34x38" width="34" height="38" alt="Логотип Кэт энерджи" >
-    </a>
     <a class="page-header__logo logo">
-      <img class="logo__image" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+      <img class="logo__icon" src="http://placehold.it/34x38" width="34" height="38" alt="Логотип Кэт энерджи" >
+      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
     </a>
-    <nav class="main-nav">
+
+    <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -32,8 +31,8 @@
   <main class="page-main">
     <section class="top-section">
       <div class="top-section__wrapper">
-        <h1>Функциональное питание для котов</h1>
-        <h2>Занялся собой? Займись котом!</h2>
+        <h1 class="top-section__title">Функциональное питание для котов</h1>
+        <div class="top-section__title-sub">Занялся собой? Займись котом!</div>
         <img class="top-section__product-image" src="http://placehold.it/280x271" alt="Картинка продукта" >
         <a class="top-section__to-proggam button" href="#">Подобрать программу</a>
       </div>
@@ -86,55 +85,65 @@
         <h2 class="example__title">Живой пример</h2>
         <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="example__list">
-          <dt class="example__term">
-            5 кг
-          </dt>
-          <dd class="example__determination">
-            снижение  веса
-          </dd>
-          <dt class="example__term">
-            60 дней
-          </dt>
-          <dd class="example__determination">
-            затрачено  времени
-          </dd>
-        </dl>
+        <ul class="example__list">
+          <li class="example__item">
+            <p class="example__term">
+              5 кг
+            </p>
+            <p class="example__determination">
+              снижение  веса
+            </p>
+          </li>
+          <li class="example__item">
+            <p class="example__term">
+              60 дней
+            </p>
+            <p class="example__determination">
+              затрачено  времени
+            </p>
+          </li>
+        </ul>
         <div class="example__expenses">
           Затраты на питание: 15 000 руб.
         </div>
 
-        <div class="example__block-images">
-          <img class="example__image example__image--before" src="http://placehold.it/320x240" alt="Фото кота до питания">
-          <img class="example__image example__image--after visually_hidden" src="http://placehold.it/320x240" alt="Фото кота после питания">
+        <div class="example__block-slider slider">
+          <ul class="example__list slider__list">
+            <li class="example__item slider__item">
+              <img class="example__image" src="http://placehold.it/320x240" alt="Фото кота до питания">
+            </li>
+            <li class="example__item slider__item">
+              <img class="example__image visually_hidden" src="http://placehold.it/320x240" alt="Фото кота после питания">
+            </li>
+          </ul>
+          <div class="example__toogles slider__toogles">
+            <button class="slider__toogle" type="button">Было</button>
+            <button class="slider__toogle" type="button">Стало</button>
+          </div>
         </div>
-        <div class="example__btn example__btn--before">
-          <input type="radio" checked name="example__input" id="before-click">
-          <label for="before-click">Было</label>
-        </div>
-        <div class="example__btn example__btn--after">
-          <input type="radio" name="example__input" id="after-click">
-          <label for="after-click">Стало</label>
-        </div>
+
+
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts">
-      <b class="page-footer__invite">
+      <div class="page-footer__invite">
         Приглашаем  к сотрудничеству  дилеров!
-      </b>
-      <p class="page-footer__text">
+      </div>
+      <div class="page-footer__text">
         ул. Большая Конюшенная, д. 19/8  Санкт-Петербург
-      </p>
+      </div>
     </div>
     <div class="page-footer__map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1516481632102" width="320" height="362" frameborder="0" style="border:0" allowfullscreen>
       </iframe>
     </div>
+
     <a class="page-footer__logo logo">
-      <img class="logo__image" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
     </a>
+
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -149,9 +158,9 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b>HTML Academy</b>
-      <a href="https://up.htmlacademy.ru">
-        <img class="logo__image" src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy" >
+      <div class="copyright__text">HTML Academy</div>
+      <a class="copyright__link" href="https://up.htmlacademy.ru">
+        <img src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy" >
       </a>
     </div>
   </footer>

@@ -6,13 +6,11 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo-ico">
-      <img class="page-header__logo-image" src="http://placehold.it/34x38" width="34" height="38" alt="Логотип Кэт энерджи" >
-    </a>
     <a class="page-header__logo logo">
-      <img class="logo__image" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+      <img class="logo__icon" src="http://placehold.it/34x38" width="34" height="38" alt="Логотип Кэт энерджи" >
+      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
     </a>
-    <nav class="main-nav">
+    <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -79,26 +77,26 @@
           <fieldset class="form-program__fieldset">
             <legend class="form-program__legend">Комментарий</legend>
             <div class="form-program__item form-program__item--area">
-              <textarea class="input--textarea" name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form-program__input form-program__input--textarea" name="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="form-program__fieldset">
             <legend class="form-program__legend">Дополнительно</legend>
             <div class="form-program__item form-program__item--checkbox">
-              <input type="checkbox" id="sweetener" name="additionally" value="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
+              <input class="form-program__input form-program__input--checkbox" type="checkbox" id="sweetener" name="additionally" value="sweetener" checked>
+              <label class="form-program__label form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
             </div>
             <div class="form-program__item form-program__item--checkbox">
-              <input type="checkbox" id="water" name="additionally" value="water">
-              <label for="water">Питьевая вода</label>
+              <input class="form-program__input form-program__input--checkbox" type="checkbox" id="water" name="additionally" value="water">
+              <label class="form-program__label form-program__label--checkbox" for="water">Питьевая вода</label>
             </div>
             <div class="form-program__item form-program__item--checkbox">
-              <input type="checkbox" id="milk" name="additionally" value="milk">
-              <label for="milk">Молоко</label>
+              <input class="form-program__input form-program__input--checkbox" type="checkbox" id="milk" name="additionally" value="milk">
+              <label class="form-program__label form-program__label--checkbox" for="milk">Молоко</label>
             </div>
             <div class="form-program__item form-program__item--checkbox">
-              <input type="checkbox" id="vitamins" name="additionally" value="vitamins">
-              <label for="vitamins">Витамины</label>
+              <input class="form-program__input form-program__input--checkbox" type="checkbox" id="vitamins" name="additionally" value="vitamins">
+              <label class="form-program__label form-program__label--checkbox" for="vitamins">Витамины</label>
             </div>
           </fieldset>
           <div class="form-program__btn">
@@ -112,20 +110,22 @@
 
   <footer class="page-footer">
     <div class="page-footer__contacts">
-      <b class="page-footer__invite">
+      <div class="page-footer__invite">
         Приглашаем  к сотрудничеству  дилеров!
-      </b>
-      <p class="page-footer__text">
+      </div>
+      <div class="page-footer__text">
         ул. Большая Конюшенная, д. 19/8  Санкт-Петербург
-      </p>
+      </div>
     </div>
     <div class="page-footer__map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1516481632102" width="320" height="362" frameborder="0" style="border:0" allowfullscreen>
       </iframe>
     </div>
+
     <a class="page-footer__logo logo">
-      <img class="logo__image" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
     </a>
+
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -140,9 +140,9 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b>HTML Academy</b>
-      <a href="https://up.htmlacademy.ru">
-        <img class="logo__image" src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy" >
+      <div class="copyright__text">HTML Academy</div>
+      <a class="copyright__link" href="https://up.htmlacademy.ru">
+        <img src="img/htmlacademy.svg" width="28" height="35" alt="HTML Academy" >
       </a>
     </div>
   </footer>
