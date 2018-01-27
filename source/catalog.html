@@ -2,26 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo logo">
-      <img class="logo__icon" src="http://placehold.it/34x38" width="34" height="38" alt="Логотип Кэт энерджи" >
-      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__icon" src="img/icon-logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи" >
+      <img class="logo__text" src="img/logo-mobile-header.svg" width="130" height="26" alt="CAT-ENERGY" >
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Каталог продукции</a>
+            <a class="main-nav__link">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -34,7 +36,7 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy PRO 500 г</a>
             <dl class="products__options-list">
@@ -61,7 +63,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy PRO 1000 г</a>
             <dl class="products__options-list">
@@ -88,7 +90,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy PRO 500 г</a>
             <dl class="products__options-list">
@@ -115,7 +117,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy PRO 1000 г</a>
             <dl class="products__options-list">
@@ -142,7 +144,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy Slim 500 г</a>
             <dl class="products__options-list">
@@ -169,7 +171,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy Slim 1000 г</a>
             <dl class="products__options-list">
@@ -196,7 +198,7 @@
           </li>
           <li class="products__item">
             <a class="products__img" href="#">
-              <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
+              <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
             </a>
             <a class="products__name" href="#">Cat Energy Slim 500 г</a>
             <dl class="products__options-list">
@@ -234,13 +236,13 @@
           <li class="additional-products__item">
             <a class="additional-products__name" href="#">Сахарозаменитель</a>
             <dl class="additional-products__options-list">
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Объем
               </dt>
               <dd class="additional-products__options-determination">
                 1 Упаковка
               </dd>
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Цена
               </dt>
               <dd class="additional-products__options-determination">
@@ -252,13 +254,13 @@
           <li class="additional-products__item">
             <a class="additional-products__name" href="#">Питьевая вода</a>
             <dl class="additional-products__options-list">
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Объем
               </dt>
               <dd class="additional-products__options-determination">
                 5 литров
               </dd>
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Цена
               </dt>
               <dd class="additional-products__options-determination">
@@ -270,13 +272,13 @@
           <li class="additional-products__item">
             <a class="additional-products__name" href="#">Молоко</a>
             <dl class="additional-products__options-list">
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Объем
               </dt>
               <dd class="additional-products__options-determination">
                 1 литр
               </dd>
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Цена
               </dt>
               <dd class="additional-products__options-determination">
@@ -288,13 +290,13 @@
           <li class="additional-products__item">
             <a class="additional-products__name" href="#">Витамины</a>
             <dl class="additional-products__options-list">
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Объем
               </dt>
               <dd class="additional-products__options-determination">
                 1 упаковка (30 г)
               </dd>
-              <dt class="additional-products__options-term visually_hidden">
+              <dt class="additional-products__options-term visually-hidden">
                 Цена
               </dt>
               <dd class="additional-products__options-determination">
@@ -308,7 +310,7 @@
     </section>
     <section class="stock">
       <div class="stock__wrapper">
-        <h2 class="visually_hidden">Акция для котов</h2>
+        <h2 class="visually-hidden">Акция для котов</h2>
         <p class="stock__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
@@ -323,13 +325,10 @@
         ул. Большая Конюшенная, д. 19/8  Санкт-Петербург
       </div>
     </div>
-    <div class="page-footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1516481632102" width="320" height="362" frameborder="0" style="border:0" allowfullscreen>
-      </iframe>
-    </div>
+    <div class="page-footer__map" id="map"></div>
 
-    <a class="page-footer__logo logo">
-      <img class="logo__text" src="http://placehold.it/130x26" width="130" height="26" alt="CAT-ENERGY" >
+    <a class="page-footer__logo logo" href="index.html">
+      <img class="logo__text" src="img/logo-footer.svg" width="130" height="26" alt="CAT-ENERGY" >
     </a>
 
     <div class="page-footer__social social">
@@ -352,5 +351,42 @@
       </a>
     </div>
   </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA57C6E5zyHXcymjYqdO4BlBuBbmL1MrE4"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+
+  <script>
+
+    var map;
+
+    function initMap() {
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 59.938945, lng: 30.323062},
+        // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+        zoom: 15,
+        zoomControl: false,
+        scaleControl: true
+      });
+
+
+      // Создаем маркер на карте
+      var marker = new google.maps.Marker({
+
+        // Определяем позицию маркера
+        position: {lat: 59.938945, lng: 30.323062},
+
+        map: map,
+
+        // Пишем название маркера - появится если навести на него курсор и немного подождать
+        title: 'Кэт энерджи',
+
+        // Укажем свою иконку для маркера
+        icon: 'img/map-pin.png'
+      });
+    }
+  </script>
+
 </body>
 </html>

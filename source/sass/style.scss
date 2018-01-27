@@ -1,7 +1,31 @@
+@import "custom-reset.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "common.scss";
+
+@import "blocks/button.scss";
+
 @import "blocks/page-header.scss";
-@import "blocks/top-section.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
+
+@import "blocks/top-section.scss";
+@import "blocks/categories.scss";
+@import "blocks/how-works.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";
+
+@import "blocks/products.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/stock.scss";
+
+@import "blocks/select-program.scss";
+@import "blocks/checkbox.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/logo.scss";
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
-body {
-  background: red;
-}
+

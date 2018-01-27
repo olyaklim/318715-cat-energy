@@ -1,1 +1,4 @@
-body { background: red; }
+@mixin background-opacity($color, $opacity: 0.3) {
+    color: $color;
+    color: rgba($color, $opacity);
+}
