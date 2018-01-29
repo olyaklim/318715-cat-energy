@@ -1,8 +1,8 @@
 .button {
   font-size: 14px;
   display: block;
-  padding: 0 16px;
-  line-height: 40px;
+  padding: 10px 16px;
+  line-height: 1.286;
   text-align: center;
   text-transform: uppercase;
   background-color: $theme-color;
@@ -10,8 +10,17 @@
   transition: color $anim, background-color $anim;
 
   &:active {
-    background-color: $theme-btn-active;
-    @include background-opacity(#000, 0.3);
+    color: rgba(#000000, 0.3);
   }
 
+  &--default {
+    font-size: 16px;
+    color: $black-text;
+    background-color: $bg-color;
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba($black-text, 0.3);
+    }
+  }
 }

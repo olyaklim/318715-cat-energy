@@ -1,23 +1,25 @@
-.page-footer {
-  padding-top: 30px;
-}
 
 .page-footer__contacts {
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
+
+  &--dark {
+    background-color: $bg-color;
+  }
 }
 
 .page-footer__invite {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
   color: $black;
 }
 
 .page-footer__text {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.428;
   font-family: 'Arial' , sans-serif;
   font-weight: 400;
 }
@@ -29,18 +31,13 @@
   padding-bottom: 30px;
   text-align: center;
   background-color: $bg-color;
+  border-bottom: 1px solid $line-border;
 }
 
 .page-footer__logo-wrap {
-  background-color: #f2f2f2;
+  background-color: $bg-color;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.page-footer__logo {
-  padding-top: 35px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .page-footer__social {
@@ -50,10 +47,10 @@
   background-color: $bg-color;
 }
 
-.page-footer__social__list {
+.page-footer__social-list {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $line-border;
 }
 
 .page-footer__copyright {

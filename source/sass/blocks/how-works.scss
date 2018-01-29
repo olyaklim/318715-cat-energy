@@ -40,30 +40,21 @@
     background-position: 50% 50%;
   }
 
-  &--benefit {
-    &:after {
-      background-image: url(/img/advantage-leaf@1x.png);
-    }
+  &--benefit:after {
+    background-image: url(../img/advantage-leaf@1x.png);
   }
 
-  &--powder {
-    &:after {
-      background-image: url(/img/advantage-powder@1x.png);
-    }
+  &--powder:after {
+    background-image: url(../img/advantage-powder@1x.png);
   }
 
-  &--ration {
-    &:after {
-      background-image: url(/img/advantage-dining@1x.png);
-    }
+  &--ration:after {
+    background-image: url(../img/advantage-dining@1x.png);
   }
 
-  &--result {
-    &:after {
-      background-image: url(/img/advantage-clock@1x.png);
-    }
+  &--result:after {
+    background-image: url(../img/advantage-clock@1x.png);
   }
-
 }
 
 .how-works__description {

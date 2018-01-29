@@ -1,3 +1,37 @@
-.social {
-  background-color: #68b738;
+.stock {
+  @include padding-mob();
+  padding-bottom: 36px;
+
+}
+
+.stock__wrapper {
+  padding-top: 65px;
+  padding-bottom: 48px;
+  background-color: $theme-color;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  color: #fff;
+
+  @include padding-mob();
+}
+
+.stock__text {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: 'Arial' , sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.stock__icon-gift {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 56px;
+  height: 30px;
+  color: #ffffff;
 }

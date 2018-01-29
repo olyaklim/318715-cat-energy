@@ -3,11 +3,18 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $line-form;
 
   &:first-child {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $line-form;
   }
+
+  &--active
+    .main-nav__link {
+      &:before {
+        width: 100%;
+      }
+    }
 }
 
 .main-nav__link {
@@ -32,15 +39,6 @@
     transition: width $anim;
   }
 
-}
-
-.main-nav__item {
-  &--active
-  .main-nav__link {
-    &:before {
-      width: 100%;
-    }
-  }
 }
 
 .main-nav__toggle {
