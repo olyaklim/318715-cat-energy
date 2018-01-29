@@ -3,19 +3,24 @@
   padding-bottom: 23px;
   background-color: $bg-color;
 }
+
 .example__wrapper {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .example__title {
   margin-bottom: 22px;
 }
+
 .example__description {
   margin-bottom: 25px;
 }
+
 .example__list {
   margin-bottom: 20px;
 }
+
 .example__term {
   margin-bottom: 8px;
   font-size: 24px;
@@ -23,12 +28,14 @@
   color: $black;
   text-transform: uppercase;
 }
+
 .example__determination {
   font-size: 12px;
   line-height: 1;
-  font-family: 'Arial' , sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
 }
+
 .example__expenses {
   font-size: 14px;
   line-height: 1.428;
@@ -38,6 +45,6 @@
 }
 
 .example__image {
-    width: 280px;
-    height: 210px;
+  width: 280px;
+  height: 210px;
 }

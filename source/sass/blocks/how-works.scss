@@ -16,7 +16,7 @@
   position: relative;
   margin-bottom: 20px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -26,7 +26,7 @@
     background-color: $theme-color;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 5px;
@@ -40,20 +40,20 @@
     background-position: 50% 50%;
   }
 
-  &--benefit:after {
-    background-image: url(../img/advantage-leaf@1x.png);
+  &--benefit::after {
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder:after {
-    background-image: url(../img/advantage-powder@1x.png);
+  &--powder::after {
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--ration:after {
-    background-image: url(../img/advantage-dining@1x.png);
+  &--ration::after {
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--result:after {
-    background-image: url(../img/advantage-clock@1x.png);
+  &--result::after {
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
 

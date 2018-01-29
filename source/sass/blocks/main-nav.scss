@@ -9,12 +9,13 @@
     border-top: 1px solid $line-form;
   }
 
-  &--active
+  &--active {
     .main-nav__link {
-      &:before {
+      &::before {
         width: 100%;
       }
     }
+  }
 }
 
 .main-nav__link {
@@ -26,8 +27,8 @@
   padding-right: 20px;
   color: $black;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,7 +39,6 @@
     background-color: $theme-color;
     transition: width $anim;
   }
-
 }
 
 .main-nav__toggle {

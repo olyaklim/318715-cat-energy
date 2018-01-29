@@ -1,5 +1,5 @@
-*:before,
-*:after,
+*::before,
+*::after,
 * {
   box-sizing: inherit;
 }
@@ -14,8 +14,6 @@ body {
   line-height: 1.15;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -28,7 +26,7 @@ figure {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: inherit;
 }
 
@@ -88,7 +86,6 @@ iframe {
 ////////////////text
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
   text-decoration: none;
   color: inherit;
 }
@@ -173,8 +170,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 textarea {
@@ -200,42 +196,32 @@ legend {
   height: auto;
 }
 
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
   font: inherit;
 }
 
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 ::-moz-placeholder {
   color: inherit;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 :-moz-placeholder {
   color: inherit;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 :-ms-input-placeholder {
   color: inherit;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 :focus::-webkit-input-placeholder {
@@ -262,6 +248,7 @@ svg {
   fill: currentColor;
 }
 
-:disabled, .disabled {
+:disabled,
+.disabled {
   cursor: not-allowed;
 }

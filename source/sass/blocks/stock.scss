@@ -1,18 +1,17 @@
 .stock {
   @include padding-mob();
   padding-bottom: 36px;
-
 }
 
 .stock__wrapper {
   padding-top: 65px;
   padding-bottom: 48px;
   background-color: $theme-color;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 50%;
-  color: #fff;
+  color: #ffffff;
 
   @include padding-mob();
 }
@@ -22,7 +21,7 @@
   padding-right: 30px;
   font-size: 16px;
   line-height: 1.25;
-  font-family: 'Arial' , sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   text-align: center;
 }

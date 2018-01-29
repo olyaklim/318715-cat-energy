@@ -1,7 +1,7 @@
-
 .radio {
   position: relative;
 }
+
 .radio__input {
   display: none;
 }
@@ -12,12 +12,9 @@
   line-height: 1.875;
   text-transform: uppercase;
   color: $label-color;
-}
-
-.radio__label {
   cursor: pointer;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -32,8 +29,6 @@
 .radio__input ~ .radio__label::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -42px;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -41,7 +36,7 @@
   left: -33px;
   background-color: $theme-color;
   transform: scale(0);
-  transition:transform 0.28s;
+  transition: transform 0.28s;
 }
 
 .radio__input:checked ~ .radio__label::after {

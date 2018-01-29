@@ -1,7 +1,3 @@
-.form-program {
-
-}
-
 .form-program__fieldset {
   margin-bottom: 20px;
 
@@ -83,15 +79,13 @@
 }
 
 .form-program__small-text {
-  @include padding-mob();
-}
-
-.form-program__small-text {
   display: block;
   margin: auto;
+
+  @include padding-mob();
   font-size: 14px;
   line-height: 1.286;
-  font-family: 'Arial' , sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   text-align: center;
 }
