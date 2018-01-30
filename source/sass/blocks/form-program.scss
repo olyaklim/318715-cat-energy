@@ -1,0 +1,91 @@
+.form-program__fieldset {
+  margin-bottom: 20px;
+
+  @include padding-mob();
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &--radio {
+    border-top: 1px solid $line-separator;
+    border-bottom: 1px solid $line-separator;
+  }
+}
+
+.form-program__legend {
+  font-size: 24px;
+  line-height: 1;
+  color: $black;
+}
+
+.form-program__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--radio {
+    position: relative;
+    padding-left: 46px;
+  }
+
+  &--checkbox {
+    position: relative;
+    padding-left: 46px;
+  }
+}
+
+.form-program__input {
+  width: 100%;
+  padding: 14px 8px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  outline: 1px solid $line-form;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    outline: 2px solid $black-text;
+  }
+
+  &:focus {
+    outline: 2px solid $black-text;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.form-program__label {
+  font-size: 16px;
+  line-height: 1.875;
+  text-transform: uppercase;
+  color: $label-color;
+}
+
+.form-program__btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.form-program__btn-send {
+  width: 100%;
+}
+
+.form-program__small-text {
+  display: block;
+  margin: auto;
+
+  @include padding-mob();
+  font-size: 14px;
+  line-height: 1.286;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}

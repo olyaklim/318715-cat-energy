@@ -1,0 +1,48 @@
+.main-nav {
+  background-color: #ffffff;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $line-form;
+
+  &:first-child {
+    border-top: 1px solid $line-form;
+  }
+
+  &--active {
+    .main-nav__link {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: $theme-color;
+    transition: width $anim;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}

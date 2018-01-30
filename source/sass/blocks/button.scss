@@ -1,0 +1,26 @@
+.button {
+  font-size: 14px;
+  display: block;
+  padding: 10px 16px;
+  line-height: 1.286;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $theme-color;
+  color: #ffffff;
+  transition: color $anim, background-color $anim;
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+
+  &--default {
+    font-size: 16px;
+    color: $black-text;
+    background-color: $bg-color;
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba($black-text, 0.3);
+    }
+  }
+}

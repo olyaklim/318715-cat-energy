@@ -1,0 +1,18 @@
+.select-program {
+  padding-bottom: 36px;
+}
+
+.select-program__title {
+  @include padding-mob();
+}
+
+.select-program__title-sub {
+  margin-bottom: 10px;
+
+  @include padding-mob();
+
+  font-size: 14px;
+  line-height: 1.286;
+  color: $black;
+  text-transform: uppercase;
+}
