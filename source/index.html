@@ -8,12 +8,15 @@
 </head>
 <body>
   <header class="page-header">
+    <div class="page-header__wrapper">
       <a class="page-header__logo logo">
         <img class="logo__icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" >
         <img class="logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="CAT-ENERGY" >
       </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__decor">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -28,6 +31,7 @@
           </ul>
         </div>
       </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="top-section">
@@ -122,8 +126,6 @@
             <button class="slider__toogle" type="button">Стало</button>
           </div>
         </div>
-
-
       </div>
     </section>
   </main>
