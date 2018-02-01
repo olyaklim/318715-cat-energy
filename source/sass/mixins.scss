@@ -1,4 +1,10 @@
 @mixin padding-mob() {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media screen and (min-width: $tablet-media) {
+   padding-left: 30px;
+   padding-right: 30px;
+
+ }
 }
