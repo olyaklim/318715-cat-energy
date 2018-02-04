@@ -1,14 +1,40 @@
 .additional-products {
-  padding-bottom: 23px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    width: 75%;
+    padding-bottom: 0;
+  }
 }
 
-.additional-products__title {
+.additional-products__wrapper {
   @include padding-mob();
 
-  margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 1;
-  color: $black;
+  @media screen and (min-width: $tablet-media) {
+
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    max-width: $desctop-media;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.additional-products__list {
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .additional-products__item {
@@ -21,6 +47,35 @@
   &:first-child {
     border-top: 1px solid $line-separator;
   }
+
+  @media screen and (min-width: $tablet-media) {
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &:first-child {
+      border-top: 1px solid $line-separator;
+    }
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 17px 0;
+
+    &:first-child {
+      border-top: 1px solid $line-separator;
+    }
+  }
 }
 
 .additional-products__name {
@@ -30,6 +85,26 @@
   line-height: 1;
   color: $black;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desctop-media) {
+    width: 36%;
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__options {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+
+    width: 36.32%;
+    padding-right: 40px;
+  }
 }
 
 .additional-products__options-list {
@@ -39,4 +114,23 @@
   line-height: 1;
   font-family: "Arial", sans-serif;
   font-weight: 400;
+
+  @media screen and (min-width: $desctop-media) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__to-order {
+
+  @media screen and (min-width: $tablet-media) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 27.68%;
+    padding: 10px 20px;
+  }
+
 }

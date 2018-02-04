@@ -1,3 +1,8 @@
 .copyright {
-  background-color: $bg-color;
+  display: block;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
 }

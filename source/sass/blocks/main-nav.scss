@@ -1,11 +1,13 @@
 .main-nav {
-  background-color: #ffffff;
+  background-color: transparent;
 
   &--closed .main-nav__item {
     display: none;
 
     @media screen and (min-width: $tablet-media) {
       display: block;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -77,6 +79,8 @@
 }
 
 .main-nav__item {
+  @include padding-mob();
+
   border-bottom: 1px solid $line-form;
 
   &:first-child {
@@ -87,16 +91,22 @@
     }
   }
 
-  &--active {
-    .main-nav__link {
-      &::before {
-        width: 100%;
-      }
-    }
+  &:last-child {
+    border-bottom: 0;
   }
 
   @media screen and (min-width: $tablet-media) {
+    padding-left: 0;
+    padding-right: 0;
     border: 0;
+
+    &--active {
+      .main-nav__link {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -107,6 +117,7 @@
   padding-bottom: 23px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
   color: $black;
 
   &::before {
@@ -120,6 +131,22 @@
     height: 2px;
     background-color: $theme-color;
     transition: width $anim;
+  }
+
+  @media screen and (min-width: $tablet-media) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+
+    &--main {
+      color: #ffffff;
+
+      &::before {
+        background-color: #ffffff;
+      }
+    }
   }
 }
 

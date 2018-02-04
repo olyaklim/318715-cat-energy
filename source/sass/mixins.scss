@@ -1,10 +1,14 @@
 @mixin padding-mob() {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $mob-padding;
+  padding-right: $mob-padding;
 
   @media screen and (min-width: $tablet-media) {
-   padding-left: 30px;
-   padding-right: 30px;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
 
- }
+  @media screen and (min-width: $desctop-media) {
+    padding-left: $desctop-padding;
+    padding-right: $desctop-padding;
+  }
 }

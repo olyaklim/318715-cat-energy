@@ -1,28 +1,63 @@
 .top-section {
   padding-top: 30px;
   padding-bottom: 23px;
-  background: linear-gradient($theme-color 72%, #ffffff 28%);
+  background: linear-gradient(#65a93c 72%, #ffffff 28%);
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
+  background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-media) {
     background-image: none;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/index-background-mobile@1x.jpg), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+    /*background-image: url("../img/index-background-mobile@1x.jpg");*/
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
 .top-section__wrapper {
   position: relative;
   display: block;
-  /*padding-bottom: 80%;*/
-  padding-left: 20px;
-  padding-right: 20px;
+
+  @include padding-mob();
+
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: block;
+    width: 100%;
+    max-width: $desctop-media;
+    margin: 0 auto;
+  }
 }
 
 .top-section__content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+
+  @media screen and (min-width: $tablet-media) {
+    padding-left: 90px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: block;
+    width: 50%;
+    padding-left: 80px;
+  }
 }
 
 .top-section__title {
@@ -50,16 +85,21 @@
   }
 }
 
-/*.top-section__img-wrap {
-  position: relative;
-  padding-bottom: 80%;
-}*/
-
 .top-section__img-wrap {
   position: relative;
   display: block;
   padding-bottom: 90%;
   margin-top: -50px;
+  z-index: 0;
+
+  @media screen and (min-width: $tablet-media) {
+    order: 2;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    padding-bottom: initial;
+    margin-top: 0;
+  }
 }
 
 .top-section__product-image {
@@ -73,8 +113,27 @@
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  /*display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;*/
+
+  @media screen and (min-width: $desctop-media) {
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+  }
 }
+
+.top-section__to-proggam {
+  z-index: 2;
+
+  @media screen and (min-width: $tablet-media) {
+    order: 1;
+    margin-right: auto;
+    margin-left: 90px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    margin-left: 80px;
+  }
+
+}
+

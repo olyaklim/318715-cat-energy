@@ -1,10 +1,21 @@
 .how-works {
   padding-top: 30px;
   padding-bottom: 23px;
+
+  @media screen and (min-width: $desctop-media) {
+    padding-bottom: 130px;
+  }
 }
 
 .how-works__wrapper {
   @include padding-mob();
+
+  @media screen and (min-width: $desctop-media) {
+    display: block;
+    width: 100%;
+    max-width: $desctop-media;
+    margin: 0 auto;
+  }
 }
 
 .how-works__title {
@@ -20,9 +31,13 @@
 
   @media screen and (min-width: $tablet-media) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     counter-reset: a;
+  }
+
+  @media screen and (min-width: $tablet-media) {
+    justify-content: center;
   }
 }
 
@@ -32,8 +47,14 @@
 
   @media screen and (min-width: $tablet-media) {
     width: 50%;
-    padding-right: 100px;
-    margin-bottom: 80px;
+    padding-right: 76px;
+    margin-bottom: 138px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    width: 25%;
+    padding-right: 10px;
+    margin-bottom: 40px;
   }
 
   &::before {
