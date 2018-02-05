@@ -1,9 +1,48 @@
 .select-program {
   padding-bottom: 36px;
+
+  @media screen and (min-width: $tablet-media) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+     padding-top: 0;
+  }
+}
+
+.select-program__form {
+  @media screen and (min-width: $tablet-media) {
+    padding-left: 40px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    padding-left: 0;
+  }
+}
+
+.select-program__wrapper {
+  @media screen and (min-width: $desctop-media) {
+    max-width: $desctop-media;
+    width: 100%;
+    margin: 0 auto;
+
+    @include padding-mob();
+  }
 }
 
 .select-program__title {
+  margin-bottom: 30px;
+
   @include padding-mob();
+
+  @media screen and (min-width: $tablet-media) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .select-program__title-sub {
@@ -15,4 +54,16 @@
   line-height: 1.286;
   color: $black;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-bottom: 45px;
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    padding-left: 0;
+  }
 }

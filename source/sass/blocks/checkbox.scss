@@ -1,5 +1,13 @@
 .checkbox {
   position: relative;
+
+  @media screen and (min-width: $tablet-media) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    width: auto;
+  }
 }
 
 .checkbox__input {
@@ -12,6 +20,7 @@
   text-transform: uppercase;
   color: $label-color;
   cursor: pointer;
+  padding-left: 48px;
 
   &::before {
     content: "";
@@ -24,6 +33,10 @@
     border: 2px solid #cfcfcf;
     transition: all 0.3s ease-in-out;
   }
+
+/*  @media screen and (min-width: $desctop-media) {
+    padding-left: 48px;
+  }*/
 }
 
 .checkbox__input:checked ~ .checkbox__label::before {
