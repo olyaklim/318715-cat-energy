@@ -24,13 +24,23 @@ body {
 
 .main-title {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 1.667;
   color: $black;
+
+  @media screen and (min-width: $tablet-media) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .main-description {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.285;
   font-family: "Arial", sans-serif;
   font-weight: 400;
+
+  @media screen and (min-width: $tablet-media) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

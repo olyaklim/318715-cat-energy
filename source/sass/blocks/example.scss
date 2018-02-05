@@ -5,8 +5,58 @@
 }
 
 .example__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include padding-mob();
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $desctop-media;
+    margin: 0 auto;
+  }
+}
+
+.example__content {
+  @media screen and (min-width: $desctop-media) {
+    width: 50%;
+  }
+}
+
+.example__block-slider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $desctop-media) {
+    width: 50%;
+  }
+}
+
+.example__list-wrap {
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-left: 0;
+  }
+}
+
+.example__list-slide {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__title {

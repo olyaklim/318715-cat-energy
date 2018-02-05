@@ -9,6 +9,13 @@
   color: #ffffff;
   transition: color $anim, background-color $anim;
 
+  @media screen and (min-width: $tablet-media) {
+    display: inline-block;
+    padding: 16px 28px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
   &:active {
     color: rgba(#000000, 0.3);
   }

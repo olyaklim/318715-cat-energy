@@ -1,5 +1,10 @@
 .radio {
   position: relative;
+
+  @media screen and (min-width: $desctop-media) {
+    padding-top: 14px;
+  }
+
 }
 
 .radio__input {

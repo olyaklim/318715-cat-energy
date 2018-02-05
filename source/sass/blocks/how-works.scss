@@ -1,20 +1,61 @@
 .how-works {
   padding-top: 30px;
   padding-bottom: 23px;
+
+  @media screen and (min-width: $desctop-media) {
+    padding-bottom: 130px;
+  }
 }
 
 .how-works__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include padding-mob();
+
+  @media screen and (min-width: $desctop-media) {
+    display: block;
+    width: 100%;
+    max-width: $desctop-media;
+    margin: 0 auto;
+  }
 }
 
 .how-works__title {
   margin-bottom: 22px;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-bottom: 60px;
+  }
+}
+
+.how-works__list {
+  display: block;
+
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: a;
+  }
+
+  @media screen and (min-width: $tablet-media) {
+    justify-content: center;
+  }
 }
 
 .how-works__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet-media) {
+    width: 50%;
+    padding-right: 76px;
+    margin-bottom: 138px;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    width: 25%;
+    padding-right: 10px;
+    margin-bottom: 40px;
+  }
 
   &::before {
     content: "";
@@ -58,6 +99,25 @@
 }
 
 .how-works__description {
+  position: relative;
   min-height: 60px;
   margin-left: 80px;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-left: 0;
+    margin-top: 80px;
+    z-index: 3;
+
+    &::after {
+      counter-increment: a;
+      content: counter(a);
+      position: absolute;
+      top: -119px;
+      right: 0;
+      line-height: 1;
+      font-size: 281px;
+      color: $bg-color;
+      z-index: -1;
+    }
+  }
 }

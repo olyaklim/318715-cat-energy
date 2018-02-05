@@ -1,6 +1,12 @@
 .stock {
   @include padding-mob();
   padding-bottom: 36px;
+
+  @media screen and (min-width: $desctop-media) {
+    display: flex;
+    width: 25%;
+    padding-bottom: 0;
+  }
 }
 
 .stock__wrapper {
@@ -14,6 +20,15 @@
   color: #ffffff;
 
   @include padding-mob();
+
+  @media screen and (min-width: $tablet-media) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desctop-media) {
+    display: block;
+    background-attachment: initial;
+  }
 }
 
 .stock__text {
