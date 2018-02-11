@@ -2,18 +2,19 @@
   padding-top: 30px;
   padding-bottom: 23px;
 
-  @media screen and (min-width: $desctop-media) {
-    padding-bottom: 130px;
+  @media screen and (min-width: $desktop-media) {
+    padding-top: 21px;
+    padding-bottom: 33px;
   }
 }
 
 .how-works__wrapper {
   @include padding-mob();
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     display: block;
     width: 100%;
-    max-width: $desctop-media;
+    max-width: $desktop-media;
     margin: 0 auto;
   }
 }
@@ -24,6 +25,10 @@
   @media screen and (min-width: $tablet-media) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: $desktop-media) {
+    margin-bottom: 72px;
+  }
 }
 
 .how-works__list {
@@ -31,31 +36,22 @@
 
   @media screen and (min-width: $tablet-media) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     counter-reset: a;
+    justify-content: center;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
-  @media screen and (min-width: $tablet-media) {
-    justify-content: center;
+  @media screen and (min-width: $desktop-media) {
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
 .how-works__item {
   position: relative;
   margin-bottom: 40px;
-
-  @media screen and (min-width: $tablet-media) {
-    width: 50%;
-    padding-right: 76px;
-    margin-bottom: 138px;
-  }
-
-  @media screen and (min-width: $desctop-media) {
-    width: 25%;
-    padding-right: 10px;
-    margin-bottom: 40px;
-  }
 
   &::before {
     content: "";
@@ -96,6 +92,42 @@
   &--result::after {
     background-image: url("../img/advantage-clock@1x.png");
   }
+
+  @media screen and (min-width: $tablet-media) {
+    width: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 138px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 30px;
+    }
+
+    &::after {
+      left: 45px;
+      top: 15px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    width: 25%;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 40px;
+    }
+
+    &::after {
+      left: 55px;
+      top: 15px;
+    }
+  }
 }
 
 .how-works__description {
@@ -105,19 +137,33 @@
 
   @media screen and (min-width: $tablet-media) {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 123px;
     z-index: 3;
 
     &::after {
       counter-increment: a;
       content: counter(a);
       position: absolute;
-      top: -119px;
+      top: -162px;
       right: 0;
       line-height: 1;
+      font-family: $oswald;
       font-size: 281px;
       color: $bg-color;
       z-index: -1;
+    }
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    margin-top: 112px;
+
+    &::after {
+      top: -152px;
+      right: -3px;
+    }
+
+    &--benefit::after {
+      right: 16px;
     }
   }
 }

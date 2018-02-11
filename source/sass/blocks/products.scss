@@ -1,11 +1,8 @@
 .products {
   padding-top: 30px;
-  /*padding-bottom: 23px;*/
 }
 
 .products__wrapper {
-  /*border-bottom: 1px solid $line-separator;*/
-
   @media screen and (min-width: $tablet-media) {
     margin-top: auto;
 
@@ -13,8 +10,8 @@
     border-bottom: 0;
   }
 
-  @media screen and (min-width: $desctop-media) {
-    max-width: $desctop-media;
+  @media screen and (min-width: $desktop-media) {
+    max-width: $desktop-media;
     width: 100%;
     padding: 0 40px;
     margin: 0 auto;
@@ -26,7 +23,7 @@
 
   margin-bottom: 30px;
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     padding: 0;
   }
 }
@@ -43,7 +40,7 @@
     margin-left: -30px;
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -40px;
@@ -84,7 +81,7 @@
   margin-bottom: 5px;
   font-size: 12px;
   line-height: 1.333;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
 
   @media screen and (min-width: $tablet-media) {
@@ -96,7 +93,7 @@
     line-height: 1;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: -4px;
@@ -136,8 +133,6 @@
     border-top: 1px solid $line-separator;
   }
 
-
-
   @media screen and (min-width: $tablet-media) {
     position: relative;
     width: 50%;
@@ -154,7 +149,7 @@
     }
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     width: 25%;
     padding: 0 40px;
     margin-bottom: 30px;
@@ -168,7 +163,6 @@
 
 .products__item-wraper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 
   &--more {
@@ -191,13 +185,14 @@
     @include padding-mob();
 
     background-color: $bg-color;
+
     &--more {
       background-color: #ffffff;
       border-color: #e6e6e6;
     }
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     @include padding-mob();
 
     padding-bottom: 40px;
@@ -227,7 +222,6 @@
     height: 200px;
 
     img {
-      display: block;
       max-width: 100%;
       width: auto;
       margin: auto;

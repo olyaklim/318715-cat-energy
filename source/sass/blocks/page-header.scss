@@ -2,7 +2,7 @@
   min-height: 65px;
   font-size: 20px;
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     &--main {
       position: absolute;
       left: 0;
@@ -10,6 +10,10 @@
       z-index: 9;
       width: 100%;
     }
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    min-height: 110px;
   }
 }
 
@@ -24,17 +28,24 @@
     position: relative;
     z-index: 2;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border-bottom: 0;
 
     @include padding-mob();
   }
+
+  @media screen and (min-width: $desktop-media) {
+    max-width: $desktop-media;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
 }
 
 .page-header__logo {
   display: flex;
-  flex: 0 1 auto;
+  flex-grow: 0;
+  flex-shrink: 1;
   height: 65px;
   padding-right: 24px;
 
@@ -44,24 +55,11 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  img {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    @media screen and (min-width: $tablet-media) {
-      margin: auto 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
 }
 
 .page-header__nav {
   @media screen and (min-width: $tablet-media) {
     position: relative;
-    flex: 1 1 auto;
+    display: flex;
   }
-
 }

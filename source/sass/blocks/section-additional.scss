@@ -2,12 +2,12 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 15px;
     right: 0;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     height: 3px;
     border-bottom: 3px solid #68b738;
   }
@@ -18,13 +18,13 @@
     }
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     margin-bottom: 86px;
   }
 }
 
 .section-additional__wrapper {
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     display: flex;
     flex-wrap: wrap;
     max-width: 1300px;
@@ -42,20 +42,20 @@
   color: $black;
 
   span {
-    background: #fff;
+    background: #ffffff;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media screen and (min-width: $tablet-media) {
     span {
-      background: #fff;
+      background: #ffffff;
       padding-left: 40px;
       padding-right: 40px;
     }
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
 
     max-width: 1300px;
     margin: 0 auto;
@@ -67,4 +67,3 @@
     z-index: 2;
   }
 }
-

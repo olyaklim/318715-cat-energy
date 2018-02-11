@@ -1,7 +1,7 @@
 .additional-products {
   padding-bottom: 40px;
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     display: flex;
     width: 75%;
     padding-bottom: 0;
@@ -11,12 +11,8 @@
 .additional-products__wrapper {
   @include padding-mob();
 
-  @media screen and (min-width: $tablet-media) {
-
-  }
-
-  @media screen and (min-width: $desctop-media) {
-    max-width: $desctop-media;
+  @media screen and (min-width: $desktop-media) {
+    max-width: $desktop-media;
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -25,12 +21,6 @@
 
 .additional-products__list {
   @media screen and (min-width: $tablet-media) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: $desctop-media) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,16 +34,6 @@
 
   @include padding-mob();
 
-  &:first-child {
-    border-top: 1px solid $line-separator;
-  }
-
-  @media screen and (min-width: $tablet-media) {
-    &:first-child {
-      border-top: 0;
-    }
-  }
-
   @media screen and (min-width: $tablet-media) {
     display: flex;
     flex-wrap: wrap;
@@ -66,15 +46,8 @@
     }
   }
 
-  @media screen and (min-width: $desctop-media) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  @media screen and (min-width: $desktop-media) {
     padding: 17px 0;
-
-    &:first-child {
-      border-top: 1px solid $line-separator;
-    }
   }
 }
 
@@ -86,7 +59,7 @@
   color: $black;
   text-transform: uppercase;
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     width: 36%;
     margin-bottom: 0;
   }
@@ -100,8 +73,7 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: $desctop-media) {
-
+  @media screen and (min-width: $desktop-media) {
     width: 36.32%;
     padding-right: 40px;
   }
@@ -112,25 +84,23 @@
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 1;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     margin-bottom: 0;
   }
 }
 
 .additional-products__to-order {
-
   @media screen and (min-width: $tablet-media) {
     width: 100%;
   }
 
-  @media screen and (min-width: $desctop-media) {
+  @media screen and (min-width: $desktop-media) {
     margin-left: auto;
     margin-bottom: 0;
     width: 27.68%;
     padding: 10px 20px;
   }
-
 }

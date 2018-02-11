@@ -1,16 +1,52 @@
 .logo {
   display: flex;
-  flex: 0 1 auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+
+  &--header {
+    .logo__img {
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      &--text {
+        width: 101px;
+        height: 18px;
+        margin-right: auto;
+      }
+
+      @media screen and (min-width: $tablet-media) {
+        margin: auto 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media screen and (min-width: $desktop-media) {
+        &--icon {
+          width: 71px;
+          height: 60px;
+        }
+
+        &--text {
+          width: 118px;
+          height: 22px;
+          margin-left: 13px;
+        }
+      }
+    }
+  }
+
+  &--footer {
+    .logo__img--text {
+      margin: auto;
+    }
+  }
 }
 
-.logo__icon {
-  width: 33px;
-  height: 38px;
-  margin-right: auto;
-}
-
-.logo__text {
-  width: 101px;
-  height: 18px;
-  margin-right: auto;
+.logo__img {
+  &--icon {
+    width: 33px;
+    height: 38px;
+    margin-right: auto;
+  }
 }
