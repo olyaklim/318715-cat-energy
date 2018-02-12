@@ -5,8 +5,10 @@
     width: 50%;
   }
 
-  @media screen and (min-width: $desctop-media) {
-    width: auto;
+  @media screen and (min-width: $desktop-media) {
+    width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -15,33 +17,45 @@
 }
 
 .checkbox__label {
+  position: relative;
+  padding-left: 48px;
   font-size: 16px;
   line-height: 1.875;
   text-transform: uppercase;
   color: $label-color;
   cursor: pointer;
-  padding-left: 48px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 8px;
     z-index: 1;
     width: 30px;
     height: 30px;
-    border: 2px solid #cfcfcf;
+    top: 0;
+    left: 8px;
+    border: 1px solid #cdcdcd;
     transition: all 0.3s ease-in-out;
   }
 
-/*  @media screen and (min-width: $desctop-media) {
-    padding-left: 48px;
-  }*/
+  @media screen and (min-width: $desktop-media) {
+    padding-left: 58px;
+    font-size: 20px;
+    line-height: 1;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -8px;
+      left: -1px;
+    }
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__label::before {
-  width: 31px;
-  height: 17px;
+  width: 22px;
+  height: 15px;
+  top: 0;
+  left: 9px;
   border-color: $theme-color;
   border-top-style: none;
   border-right-style: none;
@@ -57,9 +71,16 @@
   z-index: 1;
   width: 30px;
   height: 30px;
-  border: 2px solid #cfcfcf;
+  border: 1px solid #cdcdcd;
   opacity: 0;
   transition: all 0.8s ease-in-out;
+
+  @media screen and (min-width: $desktop-media) {
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    left: -1px;
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__label::after {

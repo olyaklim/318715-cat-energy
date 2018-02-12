@@ -36,7 +36,7 @@ body {
 .main-description {
   font-size: 14px;
   line-height: 1.285;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
 
   @media screen and (min-width: $tablet-media) {

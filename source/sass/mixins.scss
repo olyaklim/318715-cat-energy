@@ -7,8 +7,8 @@
     padding-right: $tablet-padding;
   }
 
-  @media screen and (min-width: $desctop-media) {
-    padding-left: $desctop-padding;
-    padding-right: $desctop-padding;
+  @media screen and (min-width: $desktop-media) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 }

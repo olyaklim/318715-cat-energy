@@ -1,3 +1,21 @@
 .sosial {
   display: block;
 }
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  margin: auto;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-right: 28px;
+  }
+}
+
+.social__link {
+  display: block;
+}

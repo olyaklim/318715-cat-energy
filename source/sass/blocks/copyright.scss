@@ -4,5 +4,14 @@
 
 .copyright__link {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-media) {
+    justify-content: center;
+  }
+}
+
+.copyright__logo {
+  margin-left: 23px;
 }
