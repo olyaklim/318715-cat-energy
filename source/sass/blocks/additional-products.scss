@@ -62,6 +62,7 @@
   @media screen and (min-width: $desktop-media) {
     width: 36%;
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
@@ -89,12 +90,15 @@
 
   @media screen and (min-width: $desktop-media) {
     margin-bottom: 0;
+    font-size: 16px;
   }
 }
 
 .additional-products__to-order {
   @media screen and (min-width: $tablet-media) {
     width: 100%;
+    font-size: 16px;
+    line-height: 1;
   }
 
   @media screen and (min-width: $desktop-media) {

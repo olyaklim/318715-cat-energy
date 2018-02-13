@@ -2,6 +2,7 @@
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;
+  align-items: center;
 
   &--header {
     .logo__img {
@@ -12,25 +13,29 @@
       &--text {
         width: 101px;
         height: 18px;
-        margin-right: auto;
+        margin: auto;
       }
 
       @media screen and (min-width: $tablet-media) {
         margin: auto 0;
         padding-left: 0;
         padding-right: 0;
-      }
 
-      @media screen and (min-width: $desktop-media) {
         &--icon {
-          width: 71px;
+          width: 202px;
           height: 60px;
         }
 
         &--text {
-          width: 118px;
-          height: 22px;
-          margin-left: 13px;
+          display: none;
+        }
+
+      }
+
+      @media screen and (min-width: $desktop-media) {
+        &--icon {
+          width: 202px;
+          height: 59px;
         }
       }
     }
@@ -48,5 +53,12 @@
     width: 33px;
     height: 38px;
     margin-right: auto;
+  }
+}
+
+.logo__image {
+  @media screen and (min-width: $tablet-media) {
+    width: 202px;
+    height: 59px;
   }
 }

@@ -2,14 +2,15 @@
 
   padding-bottom: 23px;
   background: $bg-color;
+  overflow: hidden;
 
   @media screen and (min-width: $tablet-media) {
     background: linear-gradient(to top, $bg-color 50%, #ffffff 50%);
   }
 
   @media screen and (min-width: $desktop-media) {
-    background: linear-gradient(to top, $bg-color 50%, #ffffff 50%);
-    padding-bottom: 72px;
+    background: linear-gradient(to top, #f2f2f2 67%, #ffffff 33%);
+    padding-bottom: 0;
   }
 }
 
@@ -26,11 +27,16 @@
 }
 
 .example__content {
+  z-index: 1;
+
   @include padding-mob();
 
   @media screen and (min-width: $desktop-media) {
+    display: flex;
+    flex-direction: column;
     width: 47%;
     margin-top: 53px;
+    margin-bottom: 76px;
     padding-left: 0;
     padding-right: 134px;
   }
@@ -45,6 +51,9 @@
 
   @media screen and (min-width: $desktop-media) {
     width: 53%;
+    position: relative;
+    flex-direction: column-reverse;
+    justify-content: start;
   }
 }
 
@@ -70,7 +79,8 @@
   }
 
   @media screen and (min-width: $desktop-media) {
-    margin-bottom: 62px;
+    margin-bottom: 59px;
+    width: 366px;
   }
 }
 
@@ -80,7 +90,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $tablet-media) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 56%;
+      bottom: 0;
+      width: 100vw;
+      background-image: linear-gradient(to bottom, #ffffff, #ffffff 169px, #eaeaea 169px, #eaeaea);
+    }
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    &::after {
+      background-image: linear-gradient(to bottom, #ffffff, #ffffff 190px, #eaeaea 190px, #eaeaea);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 44%;
+      bottom: 0;
+      width: 100vw;
+      background-image: linear-gradient(to bottom, #ffffff, #ffffff 190px, #f2f2f2 190px, #f2f2f2);
+    }
+  }
 }
+
 
 .example__title {
   margin-bottom: 22px;
@@ -94,7 +135,7 @@
   margin-bottom: 25px;
 
   @media screen and (min-width: $desktop-media) {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
@@ -111,7 +152,8 @@
   }
 
   @media screen and (min-width: $desktop-media) {
-    width: auto;
+    width: 162px;
+    padding: 13px 10px 0 10px;
   }
 }
 
@@ -123,6 +165,7 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $desktop-media) {
+    margin-bottom: 1px;
     font-size: 30px;
     line-height: 1.234;
   }
@@ -142,9 +185,13 @@
   }
 
   @media screen and (min-width: $desktop-media) {
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(9px);
     margin-bottom: -5px;
     background: #f2f2f2;
-    padding: 0 9px;
+    padding: 0 6px;
+    font-size: 14px;
   }
 }
 
@@ -164,5 +211,11 @@
     font-size: 20px;
     line-height: 1;
     text-align: left;
+  }
+}
+
+.example__text-left {
+  @media screen and (min-width: $desktop-media) {
+    padding-right: 60px;
   }
 }

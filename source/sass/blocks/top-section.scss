@@ -16,11 +16,22 @@
     align-items: center;
     padding-top: 113px;
     padding-bottom: 91px;
-    /*background-image: url(../img/index-background-mobile@1x.jpg), linear-gradient(to right, #ffffff 50%, #65a93c 50%);*/
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-position: 100% 0%;
-    background-size: 47% 99%;
-    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      height: 696px;
+      width: calc(50% - 40px);
+      background-color: #64a83b;
+      background-image: url(../img/index-background-desktop@1x.jpg);
+      background-size: 680px auto;
+      background-repeat: no-repeat;
+      background-position: -1% bottom;
+      z-index: -1;
+    }
   }
 }
 
@@ -130,8 +141,8 @@
 
   @media screen and (min-width: $desktop-media) {
     position: absolute;
-    left: -66px;
-    top: 32px;
+    left: -97px;
+    top: 29px;
     height: 499px;
     margin: auto;
     width: auto;
