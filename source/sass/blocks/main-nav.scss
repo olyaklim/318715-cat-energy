@@ -5,6 +5,16 @@
     display: none;
   }
 
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__item {
+      display: block;
+    }
+  }
+
   .main-nav__decor::before {
     content: "";
     position: absolute;

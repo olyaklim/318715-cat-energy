@@ -67,6 +67,10 @@
   width: 100%;
 
   @include padding-mob();
+
+  @media screen and (min-width: $tablet-media) {
+    margin-top: auto;
+  }
 }
 
 .products__name {
@@ -175,7 +179,7 @@
     /*padding-top: 76px;*/
 
     &:last-child {
-      margin-bottom: 30px;
+      margin-bottom: 61px;
     }
   }
 }
@@ -190,6 +194,7 @@
 
     .button--default {
       width: 100%;
+      padding: 12px 28px;
     }
   }
 
@@ -203,17 +208,17 @@
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 82px, $bg-color 82px, $bg-color);
 
     &--more {
+      padding-top: 165px;
       background-color: #ffffff;
-      border-color: #e6e6e6;
+      background-image: none;
+      border: 1px solid #e6e6e6;
     }
   }
 
   @media screen and (min-width: $desktop-media) {
     padding-bottom: 40px;
     &--more {
-      /*background-color: #ffffff;
-      border: 1px solid #e6e6e6;
-      background-image: none;*/
+      margin-top: 81px;
     }
   }
 }
@@ -265,14 +270,16 @@
   margin: auto;
 }
 
-.products__icon-plus {
+/*.products__icon-plus {
   display: block;
-  margin: auto;
-  margin-bottom: 25px;
-  width: 30px;
-  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 54px;
+  margin-bottom: 54px;
+  width: 60px;
+  height: 60px;
   color: #d3d3d3;
-}
+}*/
 
 .products__show-more {
   font-size: 16px;
@@ -284,8 +291,40 @@
 
   @include padding-mob();
 
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 28px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    opacity: 0.2;
+  }
+
   @media screen and (min-width: $tablet-media) {
+    margin-bottom: 26px;
     padding: 0;
+
+    &::before {
+      top: 136px;
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+      background-image: url("../img/icon-plus.svg");
+    }
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    @include padding-mob();
+
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -297,6 +336,14 @@
 
   @media screen and (min-width: $tablet-media) {
     padding: 0;
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    padding-left: 38px;
+    padding-right: 38px;
+    font-family: $arial;
+    font-size: 16px;
+    line-height: 1;
   }
 }
 

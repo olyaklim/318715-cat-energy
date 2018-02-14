@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -348,17 +349,16 @@
           </li>
           <li class="products__item products__item--more">
             <div class="products__item-wraper products__item-wraper--more">
-              <div class="products__img-link">
-                <span class="products__icon-plus">
-                  <svg class="inline-svg-icon" width="30" height="30">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plus"></use>
-                  </svg>
-                </span>
-              </div>
-
+<!--          <span class="products__icon-plus">
+                <svg class="inline-svg-icon" width="30" height="30">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plus"></use>
+                </svg>
+              </span> -->
               <p class="products__show-more">Показать еще 100500 товаров</p>
               <p class="products__many-tastes">На самом деле вкусов гораздо больше!</p>
-              <a class="products__to-all button button--default" href="#">Показать все</a>
+              <div class="products__btn-wrap">
+                <a class="products__to-all button button--default" href="#">Показать все</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -373,7 +373,7 @@
           <div class="additional-products__wrapper">
             <ul class="additional-products__list">
               <li class="additional-products__item">
-                <!-- <div class="additional-products__item-content"> -->
+                <div class="additional-products__item-content">
                   <a class="additional-products__name" href="#">Сахарозаменитель</a>
                   <div class="additional-products__options">
                     <dl class="additional-products__options-list">
@@ -381,7 +381,7 @@
                         Объем
                       </dt>
                       <dd class="additional-products__options-determination">
-                        1 Упаковка
+                        1 Упаковка (100 г)
                       </dd>
                     </dl>
                     <dl class="additional-products__options-list">
@@ -393,12 +393,12 @@
                       </dd>
                     </dl>
                   </div>
-                <!-- </div> -->
+                </div>
 
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
               <li class="additional-products__item">
-                <!-- <div class="additional-products__item-content"> -->
+                <div class="additional-products__item-content">
                   <a class="additional-products__name" href="#">Питьевая вода</a>
                   <div class="additional-products__options">
                     <dl class="additional-products__options-list">
@@ -418,11 +418,11 @@
                       </dd>
                     </dl>
                   </div>
-                <!-- </div> -->
+                </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
               <li class="additional-products__item">
-                <!-- <div class="additional-products__item-content"> -->
+                <div class="additional-products__item-content">
                   <a class="additional-products__name" href="#">Молоко</a>
                   <div class="additional-products__options">
                     <dl class="additional-products__options-list">
@@ -442,11 +442,11 @@
                       </dd>
                     </dl>
                   </div>
-                <!-- </div> -->
+                </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
               <li class="additional-products__item">
-                <!-- <div class="additional-products__item-content"> -->
+                <div class="additional-products__item-content">
                   <a class="additional-products__name" href="#">Витамины</a>
                   <div class="additional-products__options">
                     <dl class="additional-products__options-list">
@@ -466,7 +466,7 @@
                       </dd>
                     </dl>
                   </div>
-                <!-- </div> -->
+                </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
             </ul>
@@ -595,7 +595,7 @@
         </g>
       </symbol>
 
-      <symbol id="ico-insta" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+      <symbol id="ico-insta" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
         <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
         L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
         <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
@@ -603,7 +603,7 @@
         <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
       </symbol>
 
-      <symbol id="ico-fb" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+      <symbol id="ico-fb" version="1.1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
         <g>
           <path
           d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
