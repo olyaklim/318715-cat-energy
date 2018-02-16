@@ -1,6 +1,10 @@
 .categories {
-  padding-top: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  @media screen and (min-width: $tablet-media) {
+    padding-top: 4px;
+  }
 
   @media screen and (min-width: $desktop-media) {
     padding-top: 73px;
@@ -32,12 +36,12 @@
   font-size: 24px;
   line-height: 1.542;
   padding-left: 70px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   color: $black;
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-media) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     padding-left: 0;
     font-size: 36px;
     line-height: 1.028;
@@ -51,8 +55,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2px;
+    top: -6px;
     width: 50px;
     height: 50px;
     background-color: $theme-color;
@@ -74,8 +78,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: 8px;
-    top: -4px;
+    left: 10px;
+    top: -8px;
     margin-left: 0;
     margin-bottom: 0;
     display: block;
@@ -118,8 +122,8 @@
 
     .categories__title {
       &::after {
-        top: 13px;
-        left: -11px;
+        top: 5px;
+        left: -7px;
         width: 67px;
         height: 28px;
         background-image: url("../img/icon-cat-pro.svg");
@@ -130,18 +134,18 @@
   @media screen and (min-width: $tablet-media) {
     position: relative;
     margin-bottom: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 295px;
+    padding-top: 76px;
+    padding-bottom: 60px;
+    padding-left: 53px;
+    padding-right: 263px;
     background-color: $bg-color;
 
     &::before {
       content: "";
       position: absolute;
       left: auto;
-      right: 0;
-      top: 0;
+      right: -15px;
+      top: 10px;
       bottom: 0;
       margin-top: auto;
       margin-bottom: auto;
@@ -155,8 +159,8 @@
     &::after {
       content: "";
       position: absolute;
-      right: 79px;
-      top: -34px;
+      right: 75px;
+      top: -20px;
       left: auto;
       bottom: 0;
       margin: auto;
@@ -170,7 +174,7 @@
     &--gain-weight::after {
       top: 13px;
       left: auto;
-      right: 34px;
+      right: 11px;
       width: 268px;
       height: 112px;
       background-image: url("../img/icon-cat-pro.svg");
@@ -218,7 +222,7 @@
 
 .categories__item-content {
   background-color: $bg-color;
-  padding: 36px 20px 23px 20px;
+  padding: 30px 20px 20px 20px;
 
   @media screen and (min-width: $tablet-media) {
     padding: 0;
@@ -233,9 +237,13 @@
 }
 
 .categories__description {
-  padding-bottom: 25px;
-  margin-bottom: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
   border-bottom: 1px solid $line-border;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-bottom: 33px;
+  }
 
   @media screen and (min-width: $desktop-media) {
     margin-bottom: 8px;
@@ -244,15 +252,58 @@
 }
 
 .categories__to-category {
-  display: block;
+  position: relative;
+  display: inline-block;
+  padding-right: 45px;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+  text-decoration: none;
   color: $black;
   transition: color $anim, background-color $anim;
 
+  &::before {
+    content: "";
+    top: 50%;
+    position: absolute;
+    right: 16px;
+    width: 18px;
+    height: 2px;
+    background-color: #3f4242;
+    transition: $anim;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 7px;
+    height: 11px;
+    margin-top: -4.4px;
+    border-style: solid;
+    border-width: 5.5px 6.6px;
+    border-color: transparent #3f4242;
+    border-right: 0;
+    transition: $anim;
+  }
+
+  &:hover::before {
+    right: 7px;
+    width: 27px;
+  }
+
+  &:hover::after {
+    right: 0;
+  }
+
   &:active {
     color: rgba($black, 0.3);
+  }
+
+  @media screen and (min-width: $tablet-media) {
+    padding-right: 56px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: $desktop-media) {
@@ -271,5 +322,11 @@
     margin-left: 25px;
     height: 14px;
     width: 24px;
+  }
+}
+
+.categories__row {
+  @media screen and (min-width: $tablet-media) {
+    display: block;
   }
 }

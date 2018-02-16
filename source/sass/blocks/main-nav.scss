@@ -18,11 +18,11 @@
   .main-nav__decor::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: #000000;
+    height: 2px;
+    background: #222222;
     transform-origin: 50% 50%;
     transition: top 0.2s 0.2s, transform 0.2s;
   }
@@ -30,11 +30,11 @@
   .main-nav__decor::after {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: #000000;
+    height: 2px;
+    background: #222222;
     transform-origin: 50% 50%;
     transition: top 0.2s 0.2s, transform 0.2s;
   }
@@ -147,6 +147,8 @@
   @media screen and (min-width: $tablet-media) {
     padding-left: 0;
     padding-right: 0;
+    font-size: 18px;
+    line-height: 1.38;
 
     &:hover {
       color: rgba($black, 0.6);
@@ -184,15 +186,15 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   box-sizing: content-box;
-  width: 30px;
-  height: 30px;
-  padding: 18px 20px;
+  width: 24px;
+  height: 24px;
+  padding: 21px 20px;
   background: none;
   border: 0;
   user-select: none;
@@ -205,10 +207,10 @@
 .main-nav__decor {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 3px;
+  width: 24px;
+  height: 2px;
   vertical-align: bottom;
   font-size: 0;
-  background: #000000;
+  background: #222222;
   transition: background 0.2s 0.4s;
 }

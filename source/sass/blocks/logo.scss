@@ -8,11 +8,10 @@
     .logo__img {
       display: block;
       margin-top: auto;
-      margin-bottom: auto;
 
       &--text {
         width: 101px;
-        height: 18px;
+        height: 19px;
         margin: auto;
       }
 
@@ -22,14 +21,13 @@
         padding-right: 0;
 
         &--icon {
-          width: 202px;
-          height: 60px;
+          width: 173px;
+          height: 58px;
         }
 
         &--text {
           display: none;
         }
-
       }
 
       @media screen and (min-width: $desktop-media) {
@@ -53,6 +51,7 @@
     width: 33px;
     height: 38px;
     margin-right: auto;
+    margin-bottom: 5px;
   }
 }
 

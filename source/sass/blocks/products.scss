@@ -217,6 +217,7 @@
 
   @media screen and (min-width: $desktop-media) {
     padding-bottom: 40px;
+
     &--more {
       margin-top: 81px;
     }
@@ -270,18 +271,8 @@
   margin: auto;
 }
 
-/*.products__icon-plus {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 54px;
-  margin-bottom: 54px;
-  width: 60px;
-  height: 60px;
-  color: #d3d3d3;
-}*/
-
 .products__show-more {
+  position: relative;
   font-size: 16px;
   line-height: 1.25;
   color: $black;
@@ -308,6 +299,7 @@
   }
 
   @media screen and (min-width: $tablet-media) {
+    position: static;
     margin-bottom: 26px;
     padding: 0;
 
@@ -357,10 +349,4 @@
     margin-bottom: 0;
     margin-top: auto;
   }
-}
-
-.products__picture {
-/*  display: flex;
-  margin-left: auto;
-  margin-right: auto;*/
 }

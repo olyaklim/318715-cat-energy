@@ -12,11 +12,13 @@
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 33px;
 
   @media screen and (min-width: $desktop-media) {
     position: static;
     width: auto;
     height: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -58,7 +60,6 @@
   }
 
   @media screen and (min-width: $desktop-media) {
-    top: -59px;
     top: -134px;
 
     &--left {
@@ -66,7 +67,6 @@
       left: 37px;
       z-index: 2;
       overflow: hidden;
-      /*background-image: linear-gradient(to bottom, #ffffff, #ffffff 190px, #f2f2f2 190px, #f2f2f2);*/
     }
 
     &--right {
@@ -165,8 +165,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 7px;
-    left: 0;
+    top: 2px;
+    left: 4px;
     width: 84px;
     height: 14px;
     background-color: #ffffff;
@@ -178,8 +178,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 11px;
-    left: 4px;
+    top: 6px;
+    left: 10px;
     width: 35px;
     border-radius: 14px;
     height: 6px;
@@ -201,6 +201,7 @@
       right: 0;
       margin: auto;
       background-color: #dcdcdc;
+      border: none;
     }
 
     &::after {
@@ -221,10 +222,6 @@
       height: 34px;
       background: radial-gradient(#68b738 4px, #ffffff 4px);
     }
-  }
-
-  &::before {
-    border: none;
   }
 }
 

@@ -1,6 +1,10 @@
 .how-works {
-  padding-top: 30px;
+  padding-top: 7px;
   padding-bottom: 23px;
+
+  @media screen and (min-width: $tablet-media) {
+    padding-top: 35px;
+  }
 
   @media screen and (min-width: $desktop-media) {
     padding-top: 21px;
@@ -20,10 +24,10 @@
 }
 
 .how-works__title {
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 
   @media screen and (min-width: $tablet-media) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop-media) {
@@ -41,17 +45,19 @@
     justify-content: center;
     margin-left: -30px;
     margin-right: -30px;
+    border-bottom: 1px solid #ebebeb;
   }
 
   @media screen and (min-width: $desktop-media) {
     margin-left: -40px;
     margin-right: -40px;
+    border-bottom: none;
   }
 }
 
 .how-works__item {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -75,39 +81,58 @@
     display: block;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: 50px 50px;
   }
 
   &--benefit::after {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &--powder::after {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &--ration::after {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &--result::after {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 
   @media screen and (min-width: $tablet-media) {
     width: 50%;
     padding-right: 30px;
     padding-left: 30px;
-    margin-bottom: 138px;
+    padding-top: 24px;
+    margin-bottom: 107px;
 
     &::before {
       width: 80px;
       height: 80px;
-      left: 30px;
+      left: 36px;
+      top: 22px;
     }
 
     &::after {
-      left: 45px;
-      top: 15px;
+      left: 51px;
+      top: 37px;
     }
   }
 
@@ -124,28 +149,32 @@
     }
 
     &::after {
-      left: 55px;
-      top: 15px;
+      left: 51px;
+      top: 37px;
     }
   }
 }
 
 .how-works__description {
   position: relative;
+  padding-top: 2px;
   min-height: 60px;
   margin-left: 80px;
+  line-height: 1.4;
 
   @media screen and (min-width: $tablet-media) {
     margin-left: 0;
-    margin-top: 123px;
+    margin-top: 114px;
+    padding-top: 0;
+    padding-right: 70px;
     z-index: 3;
 
     &::after {
       counter-increment: a;
       content: counter(a);
       position: absolute;
-      top: -162px;
-      right: 0;
+      top: -155px;
+      left: 117px;
       line-height: 1;
       font-family: $oswald;
       font-size: 281px;
@@ -156,6 +185,7 @@
 
   @media screen and (min-width: $desktop-media) {
     margin-top: 112px;
+    padding-right: 0;
 
     &::after {
       top: -152px;

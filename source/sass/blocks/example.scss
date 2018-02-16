@@ -1,6 +1,6 @@
 .example {
 
-  padding-bottom: 23px;
+  padding-bottom: 35px;
   background: $bg-color;
   overflow: hidden;
 
@@ -27,6 +27,7 @@
 }
 
 .example__content {
+  padding-top: 16px;
   z-index: 1;
 
   @include padding-mob();
@@ -72,7 +73,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 
   @media screen and (min-width: $tablet-media) {
     margin-left: 0;
@@ -124,7 +125,11 @@
 
 
 .example__title {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
+
+  @media screen and (min-width: $tablet-media) {
+    margin-bottom: 70px;
+  }
 
   @media screen and (min-width: $desktop-media) {
     margin-bottom: 146px;
@@ -133,18 +138,24 @@
 
 .example__description {
   margin-bottom: 25px;
+  padding-right: 2px;
 
   @media screen and (min-width: $desktop-media) {
     margin-bottom: 69px;
+    padding-right: 0;
   }
 }
 
 .example__item {
-  width: 47%;
+  width: 44%;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
-  padding: 5px 15px 0 15px;
+  padding: 13px 17px 0 17px;
   text-align: center;
+
+  &:last-child {
+    padding: 13px 7px 0 7px;
+  }
 
   @media screen and (min-width: $tablet-media) {
     width: 41%;
@@ -176,9 +187,9 @@
   line-height: 1;
   font-family: $arial;
   font-weight: 400;
-  margin-bottom: -5px;
+  margin-bottom: -15px;
   background: #f2f2f2;
-  padding: 0 9px;
+  padding: 0 10px;
 
   @media screen and (min-width: $tablet-media) {
     background: #ffffff;
