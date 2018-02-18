@@ -1,17 +1,24 @@
+.slider {
+  @media screen and (min-width: $tablet-media) {
+    min-height: 585px;
+  }
+}
 
 .slider__list {
+  position: relative;
   width: 320px;
   height: 240px;
-  position: relative;
   overflow: hidden;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 33px;
 
   @media screen and (min-width: $desktop-media) {
-    width: 610px;
-    height: 510px;
-    margin-bottom: 46px;
+    position: static;
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -22,7 +29,6 @@
   top: 0;
   overflow: hidden;
 
-
   &--left {
     width: 100%;
 
@@ -32,6 +38,10 @@
 
     .slider__image {
       left: 0;
+
+      @media screen and (min-width: $tablet-media) {
+        margin-left: -40px;
+      }
     }
   }
 
@@ -44,16 +54,24 @@
     .slider__image {
       right: 0;
       bottom: 0;
+      /*margin-right: -19px;*/
+      margin-right: -4px;
     }
   }
 
   @media screen and (min-width: $desktop-media) {
+    top: -134px;
+
     &--left {
-      width: 51.09%;
+      width: 50.3%;
+      left: 37px;
+      z-index: 2;
+      overflow: hidden;
     }
 
     &--right {
-      width: 48.91%;
+      width: 49.7%;
+      right: -37px;
     }
   }
 }
@@ -69,8 +87,10 @@
   max-width: initial;
 
   @media screen and (min-width: $desktop-media) {
-    width: 610px;
-    height: 510px;
+    width: 690px;
+    max-width: 690px;
+    height: auto;
+    margin: 0;
   }
 }
 
@@ -78,10 +98,12 @@
   display: flex;
   justify-content: center;
   transition: width $anim;
+  z-index: 9;
 
   @media screen and (min-width: $desktop-media) {
     margin-left: auto;
     justify-content: flex-start;
+    padding-bottom: 75px;
   }
 }
 
@@ -143,8 +165,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 7px;
-    left: 0;
+    top: 2px;
+    left: 4px;
     width: 84px;
     height: 14px;
     background-color: #ffffff;
@@ -156,8 +178,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 11px;
-    left: 4px;
+    top: 6px;
+    left: 10px;
     width: 35px;
     border-radius: 14px;
     height: 6px;
@@ -173,10 +195,13 @@
     margin-right: initial;
 
     &::before {
-      width: 459px;
+      width: 425px;
       height: 6px;
-      left: 8px;
+      left: 0;
+      right: 0;
+      margin: auto;
       background-color: #dcdcdc;
+      border: none;
     }
 
     &::after {
@@ -190,11 +215,23 @@
       background: radial-gradient($theme-color 2px, #ffffff 4px);
     }
   }
+
+  @media screen and (min-width: $desktop-media) {
+    &::after {
+      width: 34px;
+      height: 34px;
+      background: radial-gradient(#68b738 4px, #ffffff 4px);
+    }
+  }
 }
 
-.range-center::after {
+.slider__range-center::after {
   @media screen and (min-width: $tablet-media) {
     left: 50%;
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    left: 47.3%;
   }
 }
 

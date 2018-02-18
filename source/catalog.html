@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo logo--header" href="index.html">
-        <img class="logo__img logo__img--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" >
+
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__img logo__img--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+
         <img class="logo__img logo__img--text" src="img/logo-mobile-header.svg" width="101" height="18" alt="CAT-ENERGY" >
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -41,7 +48,12 @@
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/catalog-chicken-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                  <img class="products__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+                </picture>
+
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>PRO 500 г</a>
@@ -72,13 +84,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img class="products__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy Pro 1000 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>PRO 1000 г</a>
@@ -109,13 +127,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img class="products__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>PRO 500 г</a>
@@ -146,13 +170,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img class="products__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Pro 1000 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>PRO 1000 г</a>
@@ -183,13 +213,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="products__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>Slim 500 г</a>
@@ -220,13 +256,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+              <picture class="products__picture">
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="products__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>Slim 1000 г</a>
@@ -257,13 +299,19 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item">
             <div class="products__item-wraper">
               <a class="products__img-link" href="#">
-                <img class="products__image" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                <picture class="products__picture">
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                  <img class="products__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+                </picture>
               </a>
               <div class="products__descr">
                 <a class="products__name" href="#">Cat Energy <br>Slim 500 г</a>
@@ -294,22 +342,23 @@
                   </dl>
                 </div>
               </div>
-              <a href="#" class="products__to-order button">Заказать</a>
+              <div class="products__btn-wrap">
+                <a href="#" class="products__to-order button">Заказать</a>
+              </div>
             </div>
           </li>
           <li class="products__item products__item--more">
             <div class="products__item-wraper products__item-wraper--more">
-              <div class="products__img-link">
-                <span class="products__icon-plus">
-                  <svg class="inline-svg-icon" width="30" height="30">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plus"></use>
-                  </svg>
-                </span>
-              </div>
-
+<!--          <span class="products__icon-plus">
+                <svg class="inline-svg-icon" width="30" height="30">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plus"></use>
+                </svg>
+              </span> -->
               <p class="products__show-more">Показать еще 100500 товаров</p>
               <p class="products__many-tastes">На самом деле вкусов гораздо больше!</p>
-              <a class="products__to-all button button--default" href="#">Показать все</a>
+              <div class="products__btn-wrap">
+                <a class="products__to-all button button--default" href="#">Показать все</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -324,90 +373,99 @@
           <div class="additional-products__wrapper">
             <ul class="additional-products__list">
               <li class="additional-products__item">
-                <a class="additional-products__name" href="#">Сахарозаменитель</a>
-                <div class="additional-products__options">
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Объем
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      1 Упаковка
-                    </dd>
-                  </dl>
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Цена
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      100 Р.
-                    </dd>
-                  </dl>
+                <div class="additional-products__item-content">
+                  <a class="additional-products__name" href="#">Сахарозаменитель</a>
+                  <div class="additional-products__options">
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Объем
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        1 Упаковка (100 г)
+                      </dd>
+                    </dl>
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Цена
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        100 Р.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+
+                <a href="#" class="additional-products__to-order button">Заказать</a>
+              </li>
+              <li class="additional-products__item">
+                <div class="additional-products__item-content">
+                  <a class="additional-products__name" href="#">Питьевая вода</a>
+                  <div class="additional-products__options">
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Объем
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        5 литров
+                      </dd>
+                    </dl>
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Цена
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        50 Р.
+                      </dd>
+                    </dl>
+                  </div>
                 </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
               <li class="additional-products__item">
-                <a class="additional-products__name" href="#">Питьевая вода</a>
-                <div class="additional-products__options">
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Объем
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      5 литров
-                    </dd>
-                  </dl>
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Цена
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      50 Р.
-                    </dd>
-                  </dl>
+                <div class="additional-products__item-content">
+                  <a class="additional-products__name" href="#">Молоко</a>
+                  <div class="additional-products__options">
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Объем
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        1 литр
+                      </dd>
+                    </dl>
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Цена
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        100 Р.
+                      </dd>
+                    </dl>
+                  </div>
                 </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
               <li class="additional-products__item">
-                <a class="additional-products__name" href="#">Молоко</a>
-                <div class="additional-products__options">
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Объем
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      1 литр
-                    </dd>
-                  </dl>
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Цена
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      100 Р.
-                    </dd>
-                  </dl>
-                </div>
-                <a href="#" class="additional-products__to-order button">Заказать</a>
-              </li>
-              <li class="additional-products__item">
-                <a class="additional-products__name" href="#">Витамины</a>
-                <div class="additional-products__options">
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Объем
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      1 упаковка (30 г)
-                    </dd>
-                  </dl>
-                  <dl class="additional-products__options-list">
-                    <dt class="additional-products__options-term visually-hidden">
-                      Цена
-                    </dt>
-                    <dd class="additional-products__options-determination">
-                      300 Р.
-                    </dd>
-                  </dl>
+                <div class="additional-products__item-content">
+                  <a class="additional-products__name" href="#">Витамины</a>
+                  <div class="additional-products__options">
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Объем
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        1 упаковка (30 г)
+                      </dd>
+                    </dl>
+                    <dl class="additional-products__options-list">
+                      <dt class="additional-products__options-term visually-hidden">
+                        Цена
+                      </dt>
+                      <dd class="additional-products__options-determination">
+                        300 Р.
+                      </dd>
+                    </dl>
+                  </div>
                 </div>
                 <a href="#" class="additional-products__to-order button">Заказать</a>
               </li>
@@ -431,18 +489,26 @@
   </main>
 
   <footer class="page-footer">
-
     <div class="page-footer__map-wrapper">
+
       <div class="page-footer__contacts page-footer__contacts--dark">
         <div class="page-footer__invite">
-          Приглашаем <br>к сотрудничеству  дилеров!
+          <span class="page-footer__row">Приглашаем </span>к сотрудничеству дилеров!
         </div>
         <div class="page-footer__text">
-          ул. Большая Конюшенная, д. 19/8  <br><br>Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="page-footer__row-bottom">Санкт-Петербург</span>
         </div>
       </div>
 
-      <div class="page-footer__map" id="map"></div>
+      <div class="page-footer__wrap-map">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="page-footer__img-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Картинка карты магазина">
+        </picture>
+      <!-- <div class="page-footer__map" id="map" aria-label="map"></div> -->
+      </div>
+
     </div>
 
     <div class="page-footer__bottom">
@@ -529,7 +595,7 @@
         </g>
       </symbol>
 
-      <symbol id="ico-insta" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+      <symbol id="ico-insta" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
         <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
         L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
         <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
@@ -537,7 +603,7 @@
         <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
       </symbol>
 
-      <symbol id="ico-fb" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+      <symbol id="ico-fb" version="1.1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
         <g>
           <path
           d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
@@ -545,13 +611,9 @@
           H1.1v2.3h2V18z"/>
         </g>
       </symbol>
-
     </svg>
-
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA57C6E5zyHXcymjYqdO4BlBuBbmL1MrE4"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>

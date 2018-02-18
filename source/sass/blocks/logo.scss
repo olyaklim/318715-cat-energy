@@ -2,35 +2,38 @@
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;
+  align-items: center;
 
   &--header {
     .logo__img {
       display: block;
       margin-top: auto;
-      margin-bottom: auto;
 
       &--text {
         width: 101px;
-        height: 18px;
-        margin-right: auto;
+        height: 19px;
+        margin: auto;
       }
 
       @media screen and (min-width: $tablet-media) {
         margin: auto 0;
         padding-left: 0;
         padding-right: 0;
+
+        &--icon {
+          width: 173px;
+          height: 58px;
+        }
+
+        &--text {
+          display: none;
+        }
       }
 
       @media screen and (min-width: $desktop-media) {
         &--icon {
-          width: 71px;
-          height: 60px;
-        }
-
-        &--text {
-          width: 118px;
-          height: 22px;
-          margin-left: 13px;
+          width: 202px;
+          height: 59px;
         }
       }
     }
@@ -48,5 +51,13 @@
     width: 33px;
     height: 38px;
     margin-right: auto;
+    margin-bottom: 5px;
+  }
+}
+
+.logo__image {
+  @media screen and (min-width: $tablet-media) {
+    width: 202px;
+    height: 59px;
   }
 }

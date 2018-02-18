@@ -3,22 +3,12 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
 
   @include padding-mob();
 
   &--dark {
     background-color: $bg-color;
-  }
-
-  br {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet-media) {
-    br {
-      display: inline;
-    }
   }
 
   @media screen and (min-width: $desktop-media) {
@@ -27,7 +17,7 @@
     top: 49%;
     left: 5%;
     transform: translateY(-50%);
-    padding: 66px 75px 55px 73px;
+    padding: 63px 75px 57px 73px;
     justify-content: initial;
     background-color: #ffffff;
     z-index: 3;
@@ -39,16 +29,19 @@
 }
 
 .page-footer__wrapper {
+  padding-top: 4px;
+
   @include padding-mob();
 
   @media screen and (min-width: $tablet-media) {
-    width: 100%;
-    max-width: $desktop-media;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
+    max-width: $desktop-media;
+    margin: 0 auto;
+    padding-top: 0;
   }
 
   @media screen and (min-width: $desktop-media) {
@@ -58,6 +51,7 @@
 }
 
 .page-footer__invite {
+  min-width: 124px;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -72,13 +66,27 @@
   }
 }
 
+.page-footer__row {
+  display: block;
+}
+
+.page-footer__row-bottom {
+  display: block;
+
+  @media screen and (min-width: $tablet-media) {
+    padding-top: 15px;
+  }
+}
+
 .page-footer__text {
+  margin-left: 17px;
   font-size: 14px;
   line-height: 1.428;
   font-family: $arial;
   font-weight: 400;
 
   @media screen and (min-width: $tablet-media) {
+    margin-left: 0;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -127,8 +135,7 @@
 }
 
 .page-footer__social-list {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 22px 38px;
   border-bottom: 1px solid $line-border;
 
   @media screen and (min-width: $tablet-media) {
@@ -140,18 +147,9 @@
   }
 }
 
-.page-footer__copyright {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: $desktop-media) {
-    padding: 0;
-  }
-}
-
 .copyright__link {
   display: block;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 22px;
 
   @media screen and (min-width: $desktop-media) {
@@ -160,22 +158,79 @@
 }
 
 .page-footer__map-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+
   @media screen and (min-width: $desktop-media) {
-    position: relative;
     height: 400px;
     width: 100%;
   }
 }
 
-.page-footer__map {
-  width: 100%;
-  height: 362px;
+.page-footer__wrap-map {
+  position: relative;
+  padding-bottom: 362px;
+  overflow: hidden;
 
   @media screen and (min-width: $tablet-media) {
-    height: 396px;
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: $desktop-media) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50.5%;
+    left: 50%;
+    width: 62px;
+    height: 53px;
+    margin-top: -43px;
+    margin-left: -31px;
+    background-image: url("../img/map-pin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+
+    @media screen and (min-width: $desktop-media) {
+      left: 75.3%;
+      width: 124px;
+      height: 106px;
+      margin-top: -52px;
+      margin-left: -63px;
+    }
+  }
+}
+
+.page-footer__img-map {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  width: 320px;
+  height: 400px;
+  max-width: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @media screen and (min-width: $tablet-media) {
+    position: static;
+    width: 767px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    width: 1440px;
     height: 400px;
   }
 }

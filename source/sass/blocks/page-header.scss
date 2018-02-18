@@ -3,6 +3,8 @@
   font-size: 20px;
 
   @media screen and (min-width: $desktop-media) {
+    min-height: 110px;
+
     &--main {
       position: absolute;
       left: 0;
@@ -10,10 +12,6 @@
       z-index: 9;
       width: 100%;
     }
-  }
-
-  @media screen and (min-width: $desktop-media) {
-    min-height: 110px;
   }
 }
 
@@ -26,6 +24,7 @@
 
   @media screen and (min-width: $tablet-media) {
     position: relative;
+    padding-top: 20px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -47,9 +46,10 @@
   flex-grow: 0;
   flex-shrink: 1;
   height: 65px;
-  padding-right: 24px;
 
   @include padding-mob();
+
+  padding-right: 50px;
 
   @media screen and (min-width: $tablet-media) {
     padding-left: 0;

@@ -47,7 +47,16 @@
   }
 
   @media screen and (min-width: $desktop-media) {
-    padding: 17px 0;
+    padding: 16.68px 0;
+  }
+}
+
+.additional-products__item-content {
+  display: flex;
+  flex-grow: 1;
+
+  @media screen and (min-width: $desktop-media) {
+    width: 72.9%;
   }
 }
 
@@ -60,8 +69,9 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $desktop-media) {
-    width: 36%;
+    width: 50%;
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
@@ -74,8 +84,10 @@
   }
 
   @media screen and (min-width: $desktop-media) {
-    width: 36.32%;
-    padding-right: 40px;
+    width: 44%;
+    height: 20px;
+    margin-left: 0;
+    padding-top: 4px;
   }
 }
 
@@ -89,18 +101,22 @@
 
   @media screen and (min-width: $desktop-media) {
     margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
 .additional-products__to-order {
   @media screen and (min-width: $tablet-media) {
     width: 100%;
+    font-size: 16px;
+    line-height: 1;
   }
 
   @media screen and (min-width: $desktop-media) {
     margin-left: auto;
     margin-bottom: 0;
-    width: 27.68%;
-    padding: 10px 20px;
+    width: 27.1%;
+    padding: 10px 3px;
   }
 }

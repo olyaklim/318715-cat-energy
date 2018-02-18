@@ -6,9 +6,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: $arial;
 
   @media screen and (min-width: $tablet-media) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop-media) {
+    font-size: 16px;
+    line-height: 1;
   }
 }
 

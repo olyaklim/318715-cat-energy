@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body>
   <header class="page-header page-header--main">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo logo--header">
-        <img class="logo__img logo__img--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" >
+
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo__img logo__img--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      </picture>
+
         <img class="logo__img logo__img--text" src="img/logo-mobile-header.svg" width="101" height="18" alt="CAT-ENERGY" >
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -43,11 +50,20 @@
             <div class="top-section__title-sub">Занялся собой? Займись котом!</div>
           </div>
 
-          <a class="top-section__to-proggam button" href="form.html">Подобрать программу</a>
+          <a class="top-section__to-program button" href="form.html">Подобрать программу</a>
         </div>
 
         <div class="top-section__img-wrap">
-          <img class="top-section__product-image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Картинка продукта" >
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="top-section__product-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Картинка продукта Cat Energy Pro" >
+          </picture>
+
         </div>
 
       </div>
@@ -63,27 +79,19 @@
               </p>
               <a class="categories__to-category" href="#">
                 Каталог Slim
-                <span class="categories__icon-arrow">
-                  <svg class="inline-svg-icon" width="24" height="11">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow-long"></use>
-                  </svg>
-                </span>
+
               </a>
             </div>
           </li>
           <li class="categories__item categories__item--gain-weight">
             <div class="categories__item-content">
               <h3 class="categories__title">Набор массы</h3>
-              <p class="categories__description main-description">Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              <p class="categories__description main-description"><span class="categories__row">Заработать авторитет среди дворовых котов </span>и даже собак?
+                Серия Cat Energy Pro поможет вашему коту нарастить необходимые <span class="categories__row">мышцы!</span>
               </p>
               <a class="categories__to-category" href="#">
                 Каталог Pro
-                <span class="categories__icon-arrow">
-                  <svg class="inline-svg-icon" width="24" height="11">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow-long"></use>
-                  </svg>
-                </span>
+
               </a>
             </div>
           </li>
@@ -139,17 +147,32 @@
               </li>
             </ul>
             <div class="example__expenses">
-              Затраты на питание: 15 000 руб.
+            <span class="example__text-left">Затраты на питание: </span>
+            <span class="example__text-right">15 000 руб.</span>
             </div>
           </div>
         </div>
         <div class="example__block-slider slider">
           <ul class="example__list-slide slider__list">
             <li class="example__item-slide slider__item slider__item--left">
-              <img class="slider__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота до питания">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img class="slider__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота до питания">
+              </picture>
             </li>
             <li class="example__item-slide slider__item slider__item--right" hidden>
-              <img class="slider__image" src="img/after-mobile@1x.png" alt="Фото кота после питания">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img class="slider__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота после питания">
+              </picture>
             </li>
           </ul>
           <div class="example__toogles slider__toogles">
@@ -164,16 +187,25 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__map-wrapper">
+
       <div class="page-footer__contacts">
         <div class="page-footer__invite">
-          Приглашаем <br>к сотрудничеству  дилеров!
+          <span class="page-footer__row">Приглашаем</span>к сотрудничеству дилеров!
         </div>
         <div class="page-footer__text">
-          ул. Большая Конюшенная, д. 19/8  <br><br>Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="page-footer__row-bottom">Санкт-Петербург</span>
         </div>
       </div>
 
-      <div class="page-footer__map" id="map"></div>
+      <div class="page-footer__wrap-map">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="page-footer__img-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Картинка карты магазина">
+        </picture>
+      <!-- <div class="page-footer__map" id="map" aria-label="map"></div> -->
+      </div>
+
     </div>
 
     <div class="page-footer__bottom">
@@ -247,7 +279,7 @@
         </g>
       </symbol>
 
-      <symbol id="ico-insta" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+      <symbol id="ico-insta" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
         <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
         L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
         <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
@@ -255,7 +287,7 @@
         <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
       </symbol>
 
-      <symbol id="ico-fb" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+      <symbol id="ico-fb" version="1.1" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
         <g>
           <path
           d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
@@ -267,8 +299,6 @@
     </svg>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA57C6E5zyHXcymjYqdO4BlBuBbmL1MrE4"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>
